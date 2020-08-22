@@ -1,19 +1,26 @@
-.title {
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-image: url(https://wallpaperaccess.com//full/177882.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.website-title {
     position: absolute;
     top: 15%;
     left: 37%;
-    z-index: 2;
-    font-size: 90px;
+    font-size: 50px;
     font-weight: bold;
-    background-color: white;
-    color: purple;
-    border: 1px solid white;
+    background-color: rgba(53, 53, 53, 0.65);
+    color: white;
+    padding: 20px;
 }
 
 .header-pic {
     width: 100%;
-    height: 90vh;
-    margin: 0;
+    height: 100vh;
     padding: 0%;
     z-index: 1;
 }
@@ -26,17 +33,98 @@
 .navigation-bar-item {
     text-decoration: none;
     margin-right: 5%;
-    margin-left: 5%;
+    color: white;
+}
+
+.first-item {
+    margin-left: 5px;
+}
+
+.last-item {
+    margin-right: 5px;
 }
 
 .navigation-bar {
     width: 100%;
     border: 1px solid gray;
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
-    background-color: white;
-    color: purple;
     position: sticky;
     z-index: 2;
     top: 1vh;
+    /* backdrop-filter: blur(10px); */
+    /* background-color: white; */
+    background-color: rgba(53, 53, 53, 0.65);
+    margin-top: -10vh;
+}
+
+.video {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.topics {
+    font-size: 40px;
+    color: purple;
+}
+
+.subtopic {
+    font-size: 35px;
+    color: royalblue;
+}
+
+.attractions-pic {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    height: 100%;
+    width: 90%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.attractions-text {
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    /* text-align: center; */
+    display: block;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 48%;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.container:hover .attractions-pic {
+    opacity: 0.3;
+}
+
+.inner-section {
+    background-color: rgba(175, 174, 174, 0.65);
+    /* padding: 10px; */
+    height: 90vh;
+    margin-top: 6vh;
+}
+
+.section {
+    margin-bottom: 2%;
+    height: 100vh;
+    border: 1px solid rgba(175, 174, 174, 0.0);
+}
+
+.section-video {
+    margin-top: 5%;
 }
