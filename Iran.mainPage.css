@@ -1,0 +1,9 @@
+.title {
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    z-index: 2;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
