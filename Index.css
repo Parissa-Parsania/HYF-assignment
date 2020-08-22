@@ -10,7 +10,7 @@ body {
 .website-title {
     position: absolute;
     top: 15%;
-    left: 37%;
+    left: 40%;
     font-size: 50px;
     font-weight: bold;
     background-color: rgba(53, 53, 53, 0.65);
@@ -47,7 +47,7 @@ body {
 .navigation-bar {
     width: 100%;
     border: 1px solid gray;
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
     position: sticky;
     z-index: 2;
@@ -60,7 +60,8 @@ body {
 
 .video {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .topics {
@@ -75,6 +76,7 @@ body {
 
 .attractions-pic {
     width: 100%;
+    /* height: 60vh; */
     display: block;
     opacity: 1;
     transition: 0.5s ease;
@@ -82,7 +84,7 @@ body {
 
 .overlay {
     position: absolute;
-    top: 25%;
+    top: 3%;
     left: 5%;
     height: 100%;
     width: 90%;
@@ -127,4 +129,8 @@ body {
 
 .section-video {
     margin-top: 5%;
+}
+
+p {
+    font-size: 20px;
 }
