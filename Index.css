@@ -1,6 +1,6 @@
 body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    background-image: url(https://wallpaperaccess.com//full/177882.jpg);
+    background-image: url(https://lh3.googleusercontent.com/proxy/a5hdRXvHrVKYA0tLnQW55JVrRI_TBwlTdQkM2_sME6Oi8XIBYLhS3Gyxee0hh-hGJcnwkCLFNU-VHwA0XBMU7dQMYBsXPiUsBRWejTh8Xl9MSuIStn8v9lByolMMVJI-Tb6Nwn1vZXYj3abSYvrZD6V-nx1j4wRQ);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -72,18 +72,13 @@ body {
     padding-top: 15px;
     text-align: center;
     font-size: 40px;
-    color: purple;
+    color: rgb(139, 0, 0);
 }
 
 #hover-your-mouse-text {
     text-align: center;
-    color: purple;
+    color: rgb(139, 0, 0);
     font-size: 20px;
-}
-
-.subtopic {
-    font-size: 35px;
-    color: royalblue;
 }
 
 .attractions-pic {
@@ -172,7 +167,7 @@ body {
 }
 
 .festival-item-container {
-    background-color: rgba(175, 174, 174, 0.65);
+    background-color: rgb(222, 184, 135);
     height: 25vh;
 }
 
@@ -192,17 +187,18 @@ body {
 .cuisine-column {
     float: left;
     width: 30%;
-    height: 100vh;
+    height: 90vh;
     margin: 10px;
     padding: 5px;
-    background-color: lightgray;
-    box-shadow: 10px 10px 10px lightslategray;
+    /* background-color: lightgray; */
+    box-shadow: 10px 10px 10px rgb(222, 184, 135);
 }
 
 .cuisine-pic {
-    width: 80%;
-    height: 45vh;
+    width: 70%;
+    height: 40vh;
     border-radius: 1200px;
+    margin-top: 5px;
 }
 
 .cuisine-pic-container {
@@ -212,7 +208,8 @@ body {
 
 .cuisine-name {
     text-align: center;
-    color: purple;
+    color: rgb(139, 0, 0);
+    font-size: 18px;
 }
 
 .cuisine-text {
@@ -225,8 +222,8 @@ body {
 .cuisine-recipe-button {
     text-align: center;
     cursor: pointer;
-    color: purple;
-    background-color: cornflowerblue;
+    color: rgb(139, 0, 0);
+    background-color: rgb(222, 184, 135);
     border: none;
     padding: 8px;
     text-decoration: none;
