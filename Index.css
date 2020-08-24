@@ -157,18 +157,13 @@ body {
     width: 20%;
 }
 
-#nowruz-pic-1 {
-    float: right;
-    margin-right: 5px;
-}
-
 .festival-text {
     font-size: 13px;
 }
 
 .festival-item-container {
     background-color: rgba(175, 174, 174, 0.65);
-    min-height: 25vh;
+    height: 25vh;
 }
 
 .festival-text-container {
