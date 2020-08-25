@@ -174,7 +174,7 @@ body {
 
 /* to make the page responsive for extra small devices (phones, 600px and down) */
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:900px) {
     .parent {
         width: 100%;
         overflow-x: hidden;
@@ -230,16 +230,6 @@ body {
     .attractions-text {
         font-size: 3.6vw;
     }
-    .cuisine-column {
-        position: relative;
-        float: left;
-        width: 90%;
-        margin-left: 2%;
-        min-height: 49vh;
-        padding: 5px;
-        /* background-color: lightgray; */
-        box-shadow: 10px 10px 10px rgb(222, 184, 135);
-    }
     .cuisine-pic {
         max-width: 60%;
         height: 16vh;
@@ -266,156 +256,17 @@ body {
         padding: 10px 0;
         width: 100%;
     }
+    .cuisine-column {
+        position: relative;
+        float: left;
+        width: 90%;
+        margin-left: 2%;
+        min-height: 57vh;
+        padding: 5px;
+        /* background-color: lightgray; */
+        box-shadow: 10px 10px 10px rgb(222, 184, 135);
+    }
     /* asghar */
-}
-
-
-/* to make the page rerspons1ve to small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-    .header-pic {
-        max-width: 100%;
-        height: 100vh;
-    }
-    .topics {
-        padding-top: 15px;
-        text-align: center;
-        font-size: 2.5vw;
-        color: rgb(139, 0, 0);
-    }
-    .section {
-        margin-bottom: 2%;
-        min-height: 100vh;
-        border: 1px solid rgba(175, 174, 174, 0.0);
-    }
-    .attractions-text {
-        font-size: 1vw;
-    }
-    .festival-image-container-left {
-        float: left;
-        width: 25%;
-    }
-    .festival-image-container-right {
-        float: right;
-        width: 25%;
-    }
-    .festival-text-container-right {
-        width: 74%;
-        margin-left: 25%;
-    }
-    .festival-text-container-left {
-        width: 75%;
-    }
-    .cuisine-column {
-        float: left;
-        width: 30%;
-        height: 90vh;
-        margin: 10px;
-        padding: 5px;
-        /* background-color: lightgray; */
-        box-shadow: 10px 10px 10px rgb(222, 184, 135);
-    }
-    .cuisine-pic {
-        max-width: 70%;
-        height: 40vh;
-        border-radius: 1200px;
-        margin-top: 5px;
-    }
-    .handicrafts-container {
-        position: relative;
-        width: 30%;
-        float: left;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-bottom: 20px;
-    }
-    .handicrafts-text {
-        position: absolute;
-        /* position the backgraound text */
-        bottom: 5px;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        text-align: center;
-        font-size: 1.2vw;
-        padding: 10px 0;
-    }
-}
-
-
-/* to make the page responsive to medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {
-    .header-pic {
-        max-width: 100%;
-        height: 100vh;
-    }
-    .video {
-        float: right;
-        margin-left: 5%;
-    }
-    .topics {
-        padding-top: 15px;
-        text-align: center;
-        font-size: 2.5vw;
-        color: rgb(139, 0, 0);
-    }
-    /* Comment and explain why we are using border here */
-    .section {
-        margin-bottom: 2%;
-        min-height: 100vh;
-        border: 1px solid rgba(175, 174, 174, 0.0);
-    }
-    .attractions-text {
-        font-size: 1vw;
-    }
-    .festival-image-container-left {
-        float: left;
-        width: 25%;
-    }
-    .festival-image-container-right {
-        float: right;
-        width: 25%;
-    }
-    .festival-text-container-right {
-        width: 74%;
-        margin-left: 25%;
-    }
-    .festival-text-container-left {
-        width: 75%;
-    }
-    .cuisine-column {
-        float: left;
-        width: 30%;
-        height: 90vh;
-        margin: 10px;
-        padding: 5px;
-        /* background-color: lightgray; */
-        box-shadow: 10px 10px 10px rgb(222, 184, 135);
-    }
-    .cuisine-pic {
-        max-width: 70%;
-        height: 40vh;
-        border-radius: 1200px;
-        margin-top: 5px;
-    }
-    .handicrafts-container {
-        position: relative;
-        width: 30%;
-        float: left;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-bottom: 20px;
-    }
-    .handicrafts-text {
-        position: absolute;
-        /* position the backgraound text */
-        bottom: 5px;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        text-align: center;
-        font-size: 1.2vw;
-        padding: 10px 0;
-    }
 }
 
 
