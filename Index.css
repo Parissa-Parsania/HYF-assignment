@@ -256,7 +256,7 @@ tr:hover {
 
 .cuisine-column {
     width: 90%;
-    height: 90vh;
+    min-height: 90vh;
     padding: 5px;
     position: relative;
     box-shadow: 10px 10px 10px rgb(222, 184, 135);
