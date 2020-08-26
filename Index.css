@@ -51,10 +51,10 @@ body {
 
 .navigation-bar-item {
     text-decoration: none;
-    margin-right: 5%;
     color: white;
     border-radius: 10px;
     padding: 5px;
+    word-break: break-all;
 }
 
 .navigation-bar-item:hover {
@@ -72,17 +72,24 @@ body {
 
 .navigation-bar {
     width: 100%;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     font-size: 1.5vw;
     text-align: center;
     position: sticky;
     z-index: 2;
     top: 1vh;
-    /* backdrop-filter: blur(10px); */
-    /* background-color: white; */
     background-color: rgba(53, 53, 53, 0.65);
     margin-top: -10vh;
-    padding: 1vh 0;
+    /* padding: 1vh 0; */
+}
+
+
+/* to remove list styel and bullet */
+
+.navigation-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 .attractions-pic {
@@ -269,9 +276,9 @@ body {
     position: relative;
     width: 30%;
     float: left;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    margin-right: 25px;
+    margin-left: 26px;
+    margin-bottom: 30px;
 }
 
 .handicrafts-text {
@@ -283,6 +290,7 @@ body {
     text-align: center;
     font-size: 1.2vw;
     padding: 10px 0;
+    width: 100%;
 }
 
 .topics {
