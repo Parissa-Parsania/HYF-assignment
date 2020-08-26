@@ -1,4 +1,4 @@
-@media only screen and (max-width:900px) {
+@media(max-width:900px) {
     .parent {
         width: 100%;
         overflow-x: hidden;
@@ -10,6 +10,9 @@
     .attraction-image-container {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .website-title {
+        left: 28%;
     }
     .header-pic {
         width: 228%;
@@ -39,7 +42,6 @@
         min-height: 100vh;
         /* Read about this  */
         display: flow-root;
-        /* border: 1px solid rgba(175, 174, 174, 0.0); */
     }
     .festival-image-container-left {
         width: 100%;
@@ -47,9 +49,13 @@
     .festival-image-container-right {
         width: 100%;
     }
-    .festival-text-container-right .festival-text-container-left {
-        width: 80%;
-        margin-left: 10%;
+    .festival-text-container-right {
+        width: 92%;
+        margin: 0 5px;
+    }
+    .festival-text-container-left {
+        width: 92%;
+        margin: 0 5px;
     }
     .festival-text,
     .attractions-text {
@@ -67,6 +73,9 @@
     .cuisine-text {
         font-size: 2.75vw;
     }
+    .cuisine-column-container {
+        display: contents;
+    }
     .handicrafts-container {
         width: 100%;
         position: relative;
@@ -81,15 +90,19 @@
         padding: 10px 0;
         width: 100%;
     }
+    .handicrafts-holder {
+        display: contents;
+    }
     .cuisine-column {
         position: relative;
         float: left;
         width: 90%;
         margin-left: 2%;
-        min-height: 57vh;
+        height: 53vh;
         padding: 5px;
-        /* background-color: lightgray; */
         box-shadow: 10px 10px 10px rgb(222, 184, 135);
     }
-    /* asghar */
+    .back-to-top-container {
+        top: 45%;
+    }
 }
