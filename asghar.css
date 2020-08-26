@@ -2,6 +2,7 @@
     .parent {
         width: 100%;
         overflow-x: hidden;
+        margin: 0;
     }
     .attraction-row-container {
         display: block;
@@ -11,8 +12,8 @@
         margin-bottom: 20px;
     }
     .header-pic {
-        max-width: 257%;
-        margin-left: -74%;
+        width: 228%;
+        margin-left: -61%;
         height: 100vh;
     }
     .video {
