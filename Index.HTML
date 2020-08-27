@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>Discover Iran</title>
     <link rel="stylesheet" href="Index.css">
-    <link rel="stylesheet" href="asghar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- above line has been added to make the page responsive -->
 </head>
@@ -13,10 +12,10 @@
 <body>
     <div class="parent">
         <div id="first-page">
-            <img src="https://media.architecturaldigest.com/photos/5a6f6d8e6a13f11a43b0d959/16:9/w_2560%2Cc_limit/GettyImages-663928486.jpg" alt="Iran-Kashan" class="header-pic">
+            <img class="header-pic" src="https://media.architecturaldigest.com/photos/5a6f6d8e6a13f11a43b0d959/16:9/w_2560%2Cc_limit/GettyImages-663928486.jpg" alt="Iran-Kashan">
         </div>
         <div class="website-title">
-            <span class="">Discover Iran</span>
+            <span>Discover Iran</span>
         </div>
         <div class="navigation-bar">
             <ul>
@@ -32,6 +31,7 @@
             <div class="inner-section">
                 <div class="topics">
                     <span>About Iran</span>
+                    <!-- to put a break between topic and text I used <hr> -->
                     <hr>
                 </div>
                 <div class="video">
@@ -52,8 +52,8 @@
                                 <td>Tehran</td>
                             </tr>
                             <tr>
-                                <td>Official languages</td>
-                                <td>Persian</td>
+                                <td>Official language</td>
+                                <td>Persian (Farsi)</td>
                             </tr>
                             <tr>
                                 <td>Area</td>
@@ -90,6 +90,7 @@
                     <div class="attraction-row-container">
                         <div class="attraction-image-container">
                             <img class="attractions-pic" src="https://arian-tour.com//images/what_to_see/naqsh-e-jahan-square.jpg" alt="Naqsh-e Jahan (Imam) Square">
+                            <!-- giving information about the pictures when user hover over them with overlay -->
                             <div class="overlay">
                                 <p class="attractions-text">
                                     <strong>Naghsh-e-Jahan Square in Esfahan:</strong><br> Hemmed on four sides by architectural gems and embracing the formal fountains and gardens at its centre, this wondrous space is a spectacle in its own right. It
@@ -97,6 +98,7 @@
                                     squares in the world, earning a listing as a Unesco World Heritage site.
                                     <!-- ref:https://www.lonelyplanet.com/iran/central-iran/esfahan/attractions/naqsh-e-jahan-imam-square/a/poi-sig/1448671/361013 -->
                                     <br>
+                                    <!-- adding a link for 'read more' which will be open in a new tab -->
                                     <a class="read-more-link" href="https://en.wikipedia.org/wiki/Naqsh-e_Jahan_Square" target="-blank">read more...</a>
                                 </p>
 
