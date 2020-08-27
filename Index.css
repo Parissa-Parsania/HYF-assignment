@@ -1,5 +1,9 @@
 /* adding some common properties for the whole body part and also adding the background image */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Apple Chancery, cursive;
     background-image: url(http://www.baltana.com/files/wallpapers-5/Vintage-Background-High-Definition-Wallpaper-16553.jpg);
@@ -44,7 +48,7 @@ body {
 
 .navigation-bar-item:hover {
     /* to have a smoother change when user hover over the navigation items I added a transition time of 0.2s */
-    transition: .2s;
+    transition: 0.2s;
     color: black;
     padding-bottom: 1px;
     background-color: white;
@@ -134,7 +138,7 @@ tr:hover {
 .section {
     margin-bottom: 2%;
     min-height: 100vh;
-    border: 1px solid rgba(175, 174, 174, 0.0);
+    border: 1px solid rgba(175, 174, 174, 0);
 }
 
 
@@ -234,28 +238,23 @@ tr:hover {
 .cuisine-recipe-button {
     text-align: center;
     border: none;
-    padding: 8px;
+    padding-bottom: 1px;
     text-decoration: none;
-    border-radius: 10%;
     font-weight: bold;
-    background-color: rgb(139, 0, 0, 0.5);
-    color: rgb(222, 184, 135);
+    border-bottom: 4px solid rgb(139, 0, 0, 0.5);
+    color: rgb(139, 0, 0, 0.6);
 }
 
 
 /* change the element style on hover */
 
 .cuisine-recipe-button:hover {
-    color: rgb(139, 0, 0);
-    background-color: rgb(222, 184, 135);
+    color: rgb(139, 0, 0, 1);
+    border-color: rgb(139, 0, 0, 1);
     cursor: pointer;
 }
 
-.cuisine-recipe-container {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-}
+.cuisine-recipe-container {}
 
 .festival-text {
     margin-top: 5%;
@@ -274,17 +273,17 @@ tr:hover {
 .festival-text-container-right {
     width: 74%;
     margin-left: 25%;
+    padding-top: 0;
 }
 
 .festival-text-container-left {
     width: 75%;
+    padding-top: 0;
 }
 
 .cuisine-column {
     width: 90%;
-    min-height: 90vh;
     padding: 5px;
-    position: relative;
     box-shadow: 10px 10px 10px rgb(222, 184, 135);
 }
 
@@ -320,7 +319,7 @@ tr:hover {
 .handicrafts-text {
     /* to fix the text on the pic I will use absolute position */
     position: absolute;
-    bottom: 5px;
+    bottom: 1%;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
@@ -337,7 +336,7 @@ tr:hover {
 
 /* I want to change the style of scrollbar */
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 10px;
 }
 
@@ -369,9 +368,11 @@ tr:hover {
 }
 
 .contact-info {
-    left: 3%;
     font-size: 1vw;
-    position: absolute;
+    position: relative;
+    width: fit-content;
+    padding-top: 1vh;
+    padding-left: 1%;
 }
 
 .copy-right-container {
@@ -384,15 +385,12 @@ tr:hover {
 }
 
 .back-to-top-link {
-    text-decoration: none;
-    border: 3px solid rgb(222, 184, 135);
     padding: 10px;
     border-radius: 100%;
     color: rgb(222, 184, 135);
 }
 
 .back-to-top-link:hover {
-    background-color: rgb(222, 184, 135);
     cursor: pointer;
     color: rgb(139, 0, 0);
 }
@@ -400,16 +398,31 @@ tr:hover {
 .back-to-top-container {
     max-width: fit-content;
     margin-right: 3%;
-    position: absolute;
-    top: 33%;
-    right: 0;
-    font-size: 1vw;
+    float: right;
+}
+
+@media(max-height:500px) {
+    .back-to-top-link {
+        padding: 0;
+        border: none;
+    }
+    .back-to-top-container {
+        top: 0;
+        position: relative;
+        width: fit-content;
+        float: right;
+    }
+    .contact-info {
+        position: relative;
+        left: 0;
+        padding: 0
+    }
 }
 
 
 /* to make the page responsive in smaller devices: */
 
-@media(max-width:900px) {
+@media (max-width: 900px) {
     .website-title {
         left: 28%;
     }
@@ -426,7 +439,7 @@ tr:hover {
         font-size: 2.8vw;
     }
     /* giving style to the items but npt to the first item */
-    .navigation-bar-item:not(.navigation-bar-item-first) {
+    .navigation-bar-item:not(#menu_item_1) {
         border-left: 1px solid lightgray;
         padding: 0px 3px;
     }
@@ -464,10 +477,12 @@ tr:hover {
         font-size: 100%;
         margin-left: 10%;
     }
+    table {
+        width: 80%;
+    }
     .section {
         margin-bottom: 2%;
         min-height: 100vh;
-        display: flow-root;
     }
     /* I want to have a full width view of pictures here: */
     .attraction-row-container {
@@ -476,6 +491,9 @@ tr:hover {
     .attraction-image-container {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .overlay {
+        top: 1%
     }
     .festival-image-container-left,
     .festival-image-container-right {
@@ -488,7 +506,7 @@ tr:hover {
     }
     .festival-text,
     .attractions-text {
-        font-size: 100%;
+        font-size: 92%;
     }
     .cuisine-column {
         position: relative;
@@ -540,8 +558,8 @@ tr:hover {
     }
     .back-to-top-link:hover {
         background-color: unset;
-        cursor: unset;
         color: unset;
+        cursor: pointer;
     }
     .contact-info {
         font-size: 100%;
